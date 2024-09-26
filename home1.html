@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+.home-section-main{
+    width: 100%;
+    margin-top: -80px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(img/home-bg-main.jpeg);
+    background-size: cover;
+}
+.home-section-main h1{
+    color: white;
+    font-size: 50px;
+}
+.home-section-main p{
+    color: white;
+    text-align: center;
+    width: 45%;
+}
+.learn-more-btn{
+    background-color: white;
+    border: hidden;
+    outline: none;
+    width: 150px;
+    color: black;
+    letter-spacing: 1px;
+    height: 40px;
+    font-size: 12px;
+}
+.home-section-main button i{
+    margin-left: 10px;
+}
+.home-search{
+    height: 140px;
+    flex-direction: column;
+    display: flex;align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+.home-search-buttons{
+    height: 40px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.rentals{
+    height: 40px;
+    width: 100px;
+    border: hidden;
+    outline: none;
+    background-color: white;
+    font-size: 14px;
+}
+.sales{
+    height: 40px;
+    width: 100px;
+    border: hidden;
+    outline: none;
+    background-color:#ffffff;
+    font-size: 14px;
+}
+.rentals:focus{
+    background-color: #06112A;
+    color: white;
+}
+.sales:focus{
+    background-color: #06112A;
+    color: white;
+}
+.home-search-form{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.search-input{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    background-color: white;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.search-input label{
+    font-weight: 300;
+    font-size: 16px;
+    color: black;
+    margin-left: 10px;
+}
+.search-input select{
+    background: none;
+    outline: none;
+    color: black;
+    margin-left: 10px;
+    width: auto;
+    font-size: 16px;
+    border: hidden;
+    font-weight: 600;
+}
+
+.search-input button{
+    background-color:#06112A;
+    color: white;
+    border: hidden;
+    height: 100%;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+.free-space{
+    height: 150px;
+}
+.home-contact-us{
+    width: 100%;
+    height: 100vh;
+    background-image:url('/img/luxury.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.home-contact-overlay{
+    width: 30%;
+    height: 100%;
+    position: relative;
+    background-image: linear-gradient(rgba(201, 201, 201, 0.4), rgba(201, 201, 201, 0.4))
+}
+.home-contact-overlay-text{
+    height: 280px;
+    width: 380px;
+    bottom: 25%;
+    left: 50%;
+    position: absolute;
+    background-color: #AEA885;
+    padding: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+}
+.home-contact-overlay-text h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+}
+.home-contact-overlay-text span{
+    color: white;
+    letter-spacing: 1px;
+}
+.home-contact-overlay-text button{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: none;
+    border: 1px solid #ffffff;
+    color: white;
+    
+}
+.home-company-data{
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.data-card{
+    width: 20%;
+height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.data-card-desc{
+height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.data-card img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+.data-card-desc h1{
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+@media(min-width:320px) and (max-width:480px){
+ .home-section-main{
+    height: 100vh;
+    margin-top: -220px;
+ }
+ .home-section-main h1{
+    font-size: 35px;
+ }
+ .home-section-main p{
+    width: 80%;
+ }
+ .home-search-form{
+    height: 200px;
+ }
+ .home-search{
+    height: auto;
+ }
+ .search-form{
+    flex-direction: column;
+ }
+ .search-input{
+    width: 100%;
+ }
+ .search-input label{
+display: none;
+ }
+ .search-input select{
+    width: 90%;
+ }
+ .free-space{
+    height: 100px;
+ }
+ .home-contact-us{
+ height: 60vh;
+ }
+ .home-contact-overlay{
+ width: 90%;
+
+}
+.home-contact-overlay-text{
+left: 0;
+bottom: 50px;
+width: 90%;
+}
+.home-company-data{
+    flex-direction: column;
+    height: auto;
+}
+.data-card{
+    width: 70%;
+}
+}
+</style>
+<body>
+<div class="home-section-main">
+    <div class="free-space">
+
+    </div>
+<h1 class="text-center">Your Property Is <br> Our Priority</h1>
+<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+<button class="learn-more-btn">LEARN MORE<i class="fa-solid fa-arrow-right-long"></i></button>
+<div class="home-search mt-3">
+    <div class="home-search-buttons">
+<button class="sales">SALES</button>
+<button class="rentals">RENTALS</button>
+    </div>
+    <div class="home-search-form">
+<form action="" class="search-form">
+    <div class="search-input">
+        <label for="">PROPERTY TYPE</label>
+        <select name="" id="">
+            <option value="" selected>Residential</option>
+            <option value="">All</option>
+        </select>
+    </div>
+    <div class="search-input">
+        <label for="">AREA</label>
+        <select name="" id="">
+            <option value="" selected>Dubai Marena</option>
+            <option value="">All</option>
+        </select>
+    </div>
+    <div class="search-input">
+        <label for="">PRICE LIMIT</label>
+        <select name="" id="">
+            <option value="" selected>AED 10000</option>
+            <option value="">AED 200000</option>
+        </select>
+    </div>
+    <div class="search-input">
+        <button>SEARCH PROPERTIES</button>
+    </div>
+</form>
+    </div>
+</div>
+</div>
+
+<div class="home-contact-us">
+<div class="home-contact-overlay">
+<div class="home-contact-overlay-text">
+<h1>Discover Luxurious Living</h1>
+<span>Feel the luxury and peace with our premium properties</span>
+<button>CONTACT US</button>
+</div>
+</div>
+</div>
+<div class="container-fluid mt-5">
+    <h2 class="text-center mb-3 mt-3">Dont wait any longer, let us help you to make your <br> dream home a reality</h2>
+<div class="home-company-data">
+    <div class="data-card">
+        <img src="/img/property.webp" alt="">
+<div class="data-card-desc">
+<h1>651</h1>
+<span>Properties Sold</span>
+</div>
+    </div>
+    <div class="data-card">
+        <img src="img/client.webp" alt="">
+  <div class="data-card-desc">
+    <h1>1256</h1>
+    <span>Happy Clients</span>
+</div>      
+    </div>
+    <div class="data-card">
+        <img src="/img/building.webp" alt="">
+        <div class="data-card-desc">
+            <h1>54</h1>
+    <span>Buildings Sold</span>
+        </div>     
+    </div>
+    <div class="data-card">
+        <img src="img/awards.webp" alt="">
+        <div class="data-card-desc">
+            <h1>17</h1>
+    <span>Awards Won</span>
+        </div>    
+    </div>
+</div>
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

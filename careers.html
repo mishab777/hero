@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aboutus</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    .about-section-main {
+      width: 100%;
+      height: 50vh;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(img/about-bg.jpg);
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .about-section-main h1 {
+      font-size: 40px;
+      font-weight: 800;
+      color: white;
+      text-align: center;
+      letter-spacing: 2px;
+      line-height: 1.6;
+    }
+    .about-section-main p {
+      text-align: center;
+      width: 50%;
+      color: white;
+    }
+    .career-one-image {
+      height: auto;
+      width: 100%;
+    }
+    .career-one-image img {
+      width: 100%;
+    }
+    .career-one-text {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    .career-one-text h1 {
+      font-size: 30px;
+    }
+    .career-one-text button {
+      background-color: black;
+      color: white;
+      width: 200px;
+      border-radius: 30px;
+      border: hidden;
+      font-size: 14px;
+      height: 40px;
+      text-transform: uppercase;
+    }
+    .para-of-boost {
+      width: 70%;
+      text-align: center;
+      margin: auto;
+    }
+    .careers--section-perks-container {
+      padding: 4rem 3rem;
+      text-align: center;
+      background-color: #fbfdfc;
+    }
+
+    .careers--section-perks-container .perks {
+      padding: 1.5rem 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      max-width: 250px;
+      margin: 0 auto;
+    }
+
+    .careers--section-perks-container .perks .perk {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: initial;
+      -webkit-justify-content: initial;
+      -ms-flex-pack: initial;
+      justify-content: initial;
+      padding: 1.5rem 0;
+    }
+
+    .careers--section-perks-container .perks .perk .image {
+      margin-bottom: 1.5rem;
+    }
+
+    .careers--section-perks-container .perks .perk .title {
+      margin-bottom: 0.75rem;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 135%;
+      height: 35px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    .careers--section-perks-container .perks .perk .body {
+      margin-bottom: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 130%;
+    }
+
+    .careers--section-perks-container .perks-closure {
+      padding-top: 1.5rem;
+    }
+    .vacancy-section {
+      width: 100%;
+      height: auto;
+      background-color: #f6f6f1;
+    }
+    .vacancy-section h1{
+        font-size: 30px;
+    }
+    .vacancy-section p {
+      width: 55%;
+      margin: auto;
+    }
+    .vacancy-card{
+        width: 100%;
+        height: 300px;
+        border-radius: 15px 15px 0px 0px;
+        background-color: white;
+        overflow: hidden;
+        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    }
+    .vacancy-card-text{
+        width: 100%;
+        padding: 20px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    .vacancy-card img{
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    .vacancy-card-text h3{
+        font-size: 18px;
+        font-weight: 650;
+    }
+    .vacancy-card-text span{
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .vacancy-card-text span i{
+        margin-right: 8px;
+        opacity: 0.5;
+    }
+    .vacancy-card-text a{
+        color: rgb(7, 101, 79);
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .vacancy-card-text a i{
+        margin-left: 10px;
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .about-section-main p {
+        width: 90%;
+      }
+      .about-section-main h1 {
+        line-height: 1;
+      }
+      .para-of-boost {
+        width: 90%;
+      }
+    }
+
+    @media all and (min-width: 1025px) {
+      .careers--section-perks-container .perks {
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        max-width: 1050px;
+        margin: 0 auto;
+      }
+
+      .careers--section-perks-container .perks .perk {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 30%;
+        -ms-flex: 0 0 30%;
+        flex: 0 0 30%;
+      }
+
+      .careers--section-perks-container .perks .perk .title {
+        line-height: 135%;
+      }
+
+      .careers--section-perks-container .perks .perk .body {
+        line-height: 144%;
+      }
+    }
+  </style>
+  <body>
+    <div class="about-section-main">
+      <h1>Careers at Gray Signature</h1>
+      <p>
+        Looking to take your career to the next level? At Gray Signature, we
+        continue to grow our different departments offering unique opportunities
+        constantly. We are seeking hardworking, ambitious, honest, dedicated and
+        enthusiastic people to join us.
+      </p>
+    </div>
+    <div class="container pb-4 mt-5">
+      <h1 class="text-center mb-3">Boost your career</h1>
+      <p class="text-center para-of-boost">
+        As an award winning real estate agency, our clients are at the core of
+        what we do – and we focus on building a strong and capable team of
+        experts to keep offering the best possible service. We're always on the
+        hunt for high achievers and top performers with a strong work ethic and
+        a passion for customer service.
+      </p>
+    </div>
+    <div class="container px-3 mt-4">
+      <div class="row gy-3 gx-3">
+        <div class="col-md-6">
+          <div class="career-one-image">
+            <img
+              src="https://riseadvisors.ca/wp-content/uploads/2022/12/AdobeStock_440299419-scaled.jpeg"
+              alt
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="career-one-text p-4">
+            <h1 class="mb-3">Working at Gray Signature</h1>
+            <p>
+              Regardless of your role or department, you'll have access to the
+              expertise of our team from day one, as well as industry leading
+              tools to help you thrive and grow. We also believe in rewarding
+              hard work and effort – so expect competitive earning potential,
+              thrilling incentives, and ongoing support from trainers and
+              managers to help you reach your goals.
+            </p>
+            <p>At Gray Signature, we all share the same goals – from Directors to Team Managers. This collaborative mindset, combined with our shared workspaces, helps us strengthen our team spirit and lift each other.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="careers--section-perks-container">
+      <h2 class="headline">Benefits & Perks</h2>
+      <div class="perks">
+        <div class="perk">
+          <img
+            alt
+            class="image"
+            src="https://assets.taskrabbit.com/v3/assets/static/careers/401k-8118c7eaff23bfbe94fc32d68d67dcd8a868daae7d7da2e6001a52c352ef6013.svg"
+          />
+          <p class="title">Health & 401K</p>
+          <p class="body">Employee-covered health care and retirement match</p>
+        </div>
+        <div class="perk">
+          <img
+            alt
+            class="image"
+            src="https://assets.taskrabbit.com/v3/assets/static/careers/pto-5717a98d694b8e7de2a4ddc03381ced3ac48664cef690d12b15d64c7bdae917d.svg"
+          />
+          <p class="title">Flexible PTO & Company Closures</p>
+          <p class="body">
+            Prioritized work-life balance, with flexible PTO and 18 observed
+            days off
+          </p>
+        </div>
+        <div class="perk">
+          <img
+            alt
+            class="image"
+            src="https://assets.taskrabbit.com/v3/assets/static/careers/wellness-40f9a2619cd59b7245fb309585d3d135a999057836beb60280a5194645626407.svg"
+          />
+          <p class="title">Mental Health &amp; Wellness</p>
+          <p class="body">
+            Wellbeing allowance and free access to HeadSpace and Ginger
+          </p>
+        </div>
+        <div class="perk">
+          <img
+            alt
+            class="image"
+            src="https://assets.taskrabbit.com/v3/assets/static/careers/family-950f52987125a0c9dc66d7fae8323f3f54a76c67eb325b624ae789359639fd5f.svg"
+          />
+          <p class="title">Family Planning</p>
+          <p class="body">
+            Paid parental leave, adoption assistance, and fertility /
+            reproductive healthcare
+          </p>
+        </div>
+        <div class="perk">
+          <img
+            alt
+            class="image"
+            src="https://assets.taskrabbit.com/v3/assets/static/careers/learning-f50f18d85ada8bedfef6957030be24808d8d97e612772be2fc6e89bbcdb34712.svg"
+          />
+          <p class="title">Learning & Development</p>
+          <p class="body">
+            Speaker series, career paths, and annual education allowance
+          </p>
+        </div>
+        <div class="perk">
+          <img
+            alt
+            class="image"
+            src="https://assets.taskrabbit.com/v3/assets/static/careers/perks-646ade9f93f984bc3fe1cd7e56036e4ed99cf85d0fb2058957bdb599b050f0c5.svg"
+          />
+          <p class="title">Perks and Stipends</p>
+          <p class="body">
+            IKEA discount, Taskrabbit credit, and allowances to support remote
+            work
+          </p>
+        </div>
+      </div>
+      <div class="perks-closure"></div>
+    </section>
+    <div class="container mb-3 px-3">
+      <div class="row gy-3 gx-3">
+        <div class="col-md-6">
+          <div class="career-one-text p-4">
+            <h1 class="mb-3">
+              Empowering Our Team with Cutting-Edge Training and Support
+            </h1>
+            <p>
+              We believe in empowering our team, and we have leading tools to do
+              it – including our in-haus real estate training platform,
+              dedicated trainers, and ongoing leadership support.
+            </p>
+            <p>
+              At Gray Signature, we all share the same goals – from Directors to
+              Team Managers. This collaborative mindset, combined with our
+              shared workspaces, helps us strengthen our team spirit and lift
+              each other.
+            </p>
+            <button onclick="window.location.href='#vacancy-section'">View Vacancies</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="career-one-image">
+            <img
+              src="https://learn.g2.com/hubfs/how%20to%20lead%20a%20meeting.jpg"
+              alt
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="vacancy-section pt-5 pb-4" id="vacancy-section">
+      <h1 class="text-center mb-3">Current Vacancies</h1>
+      <p class="text-center">
+        We offer uncapped salary potential, incentives and rewards, and ongoing
+        support from our managers and trainers. If you think you have what it
+        takes to be part of our success story, we want to hear from you.
+      </p>
+      <div class="container mt-4 px-3">
+        <div class="row gx-4 gy-3">
+          <div class="col-md-3">
+            <div class="vacancy-card">
+                <img src="https://ggfx-handh3.s3.eu-west-2.amazonaws.com/x/340x200/haus_and_haus_Current_Vacancies_1_3c8342cccf.webp" alt="">
+                <div class="vacancy-card-text">
+                <h3>Sales Consultant</h3>
+                <span><i class="fa-solid fa-location-dot"></i>Dubai, UAE</span>
+                <a href="">View Details<i class="fa-solid fa-arrow-trend-up"></i></a>
+            </div>
+            </div>
+
+          </div>
+          <div class="col-md-3">
+            <div class="vacancy-card">
+                <img src="https://blog.udemy.com/wp-content/uploads/2014/04/bigstock-Image-of-business-partners-dis-41296537.jpg" alt="">
+                <div class="vacancy-card-text">
+                <h3>Marketing Lead</h3>
+                <span><i class="fa-solid fa-location-dot"></i>Dubai, UAE</span>
+                <a href="">View Details<i class="fa-solid fa-arrow-trend-up"></i></a>
+            </div>
+            </div>
+
+          </div>
+          <div class="col-md-3">
+            <div class="vacancy-card">
+                <img src="https://carajput.com/services/images/being-consultant.jpg" alt="">
+                <div class="vacancy-card-text">
+                <h3>Off Plan Consultant</h3>
+                <span><i class="fa-solid fa-location-dot"></i>Dubai, UAE</span>
+                <a href="">View Details<i class="fa-solid fa-arrow-trend-up"></i></a>
+            </div>
+            </div>
+
+          </div>
+          <div class="col-md-3">
+            <div class="vacancy-card">
+                <img src="https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2021/08/931/506/real-estate-agent-credible-iStock-1243633452.png?ve=1&tl=1" alt="">
+                <div class="vacancy-card-text">
+                <h3>Portfolio Manager</h3>
+                <span><i class="fa-solid fa-location-dot"></i>Dubai, UAE</span>
+                <a href="">View Details<i class="fa-solid fa-arrow-trend-up"></i></a>
+            </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

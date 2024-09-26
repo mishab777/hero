@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emaar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/22.0.2/css/intlTelInput.css" integrity="sha512-OkSoWyaoScjXhOm87XO5hDz1E5buvm2aAkq+5zJmaYpylA0OKJ5no5qc4ZRrmApoaXEgXc3n0iyVS1q5FgiJjg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/22.0.2/js/intlTelInput.min.js" integrity="sha512-sbwOm2sd7b4Wnu0yHGKAnYnmSdJ6Sib1ZHPyyg3ITlxIbyocccgqCXLHJjEkJLXn+mfdezWGn2KWdGc1GIV64g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+    .section-amenities{
+        height: auto;
+        width: 100%;
+        background-color: #F2F2F2;
+    }
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
+.amenities-card{
+    width: 100%;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.amenities-card h3{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+.amenities-card svg{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.section-two-card svg{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.section-two-card-3 svg{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.section-two-card{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-right: 1px solid rgb(229, 228, 228);
+}
+.section-two-card-3{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.section-two-card-3 h3 span{
+    text-align: center;
+    font-weight: 700;
+}
+.section-two-card-3 h3{
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+}
+.section-two-card h3 span{
+    text-align: center;
+    font-weight: 700;
+}
+.section-two-card h3{
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+}
+.section-three-text{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.section-three-image{
+    width: 100%;
+    height: 100vh;
+}
+.section-three-image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.section-three-text p{
+    font-size: 20px;
+}
+.section-form{
+    background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url(emarimg/form-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.base-form{
+    width: 50%;
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+.form-inputs{
+    height: 60px;
+    border-radius: 10px;
+    width: 450px;
+    border: hidden;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 3%;
+    margin-bottom: 20px;
+}
+.discover-btn{
+    height: 60px;
+    border-radius: 10px;
+    width: 450px;
+    border: hidden;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.checkbox-div{
+    display: flex;
+    width: 50%;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.checkbox-div input{
+    height: 15px;
+}
+.checkbox-div span{
+    color: white;
+}
+.section-gallery{
+    height: auto;
+    background-color: white;
+    width: 100%;
+}
+.photo-1{
+    height: 100vh;
+    width: 100%;
+}
+.photo-2{
+    height: 50vh;
+    width: 100%;
+}
+.section-gallery img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    object-fit: cover;
+}
+.photo-3{
+    height: 100vh;
+    width: 100%;
+}
+.accordion {
+    display: flex;
+    flex-direction: column;
+    font-family: "Sora", sans-serif;
+    max-width: 100%;
+    min-width: 320px;
+    margin: 50px auto;
+    background-color: #F2F2F2;
+    padding: 0 50px;
+}
+.accordion h1 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+.accordion label{
+  font-family: 'Times New Roman', Times, serif;
+}
+.accordion-item {
+    margin-top: 16px;
+    border: 1px solid #fcfcfc;
+    border-radius: 6px;
+    background-color: #F2F2F2;
+}
+.accordion-item .accordion-item-title {
+    position: relative;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.accordion-item .accordion-item-desc {
+    display: none;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+    color: #444;
+    border-top: 1px dashed #ddd;
+    padding: 10px 20px 20px;
+    box-sizing: border-box;
+}
+.accordion-item input[type="checkbox"] {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+.accordion-item input[type="checkbox"]:checked ~ .accordion-item-desc {
+    display: block;
+}
+.accordion-item
+    input[type="checkbox"]:checked
+    ~ .accordion-item-title
+    .icon:after {
+    content: "-";
+    font-size: 20px;
+}
+.accordion-item input[type="checkbox"] ~ .accordion-item-title .icon:after {
+    content: "+";
+    font-size: 20px;
+}
+.accordion-item:first-child {
+    margin-top: 0;
+}
+.accordion-item .icon {
+    margin-left: 14px;
+}
+.img {
+    width: 60px;
+    margin: auto; /* Center the logo horizontally */
+    display: block; /* Ensure the logo is displayed as a block element */
+}
+
+/* CSS to style the navigation bar */
+.nav {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(203, 206, 206, 0.33);
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; 
+    align-items: center; 
+}
+    .bg-image {
+
+    background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)), url(emarimg/main-bg.jpg);
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    color: white; 
+    height: 100vh;
+
+}
+.text{
+    margin-left: 100px;
+    margin-top: 140px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 45px;
+    font-weight: bold;
+}
+.ppp{
+    margin-left: 100px;
+    margin-top: 10px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.pp {
+    color: black;
+
+    margin-left: 100px;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px; /* Adjust the font size as needed */
+    margin: 0; /* This line sets margin to 0 */
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 350px;
+    height: 370px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 70px;
+    margin-left: 190px;
+    padding: 25px;
+}
+
+.form h1 {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+   
+}
+.form input[type="text"] {
+    width: 90%; /* Set the width of the text field */
+    padding: 10px; /* Add padding for better visual appearance */
+    margin-top: 10px; /* Add some space above the text field */
+    font-family: 'Times New Roman', Times, serif; /* Set the font family */
+    font-size: 16px; /* Set the font size */
+    border: 1px solid #ccc; /* Add a border around the text field */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+/* CSS to style the email field */
+.form input[type="email"] {
+    width: 90%; /* Set the width of the text field */
+    padding: 10px; /* Add padding for better visual appearance */
+    margin-top: 10px; /* Add some space above the text field */
+    font-family: 'Times New Roman', Times, serif; /* Set the font family */
+    font-size: 16px; /* Set the font size */
+    border: 1px solid #ccc; /* Add a border around the text field */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+.form input[type="tel"] {
+    width: 90%; /* Set the width of the input field */
+    padding: 10px; /* Add padding for better visual appearance */
+    margin-top: 10px; /* Add some space above the input field */
+    font-family: 'Times New Roman', Times, serif; /* Set the font family */
+    font-size: 16px; /* Set the font size */
+    border: 1px solid #ccc; /* Add a border around the input field */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    box-sizing: border-box; 
+}
+.checkk{
+    display: flex;
+    flex-direction: row;
+}
+.check{
+    margin-left:5px;
+}
+.textt{color: black;
+padding-top: 15px;
+margin-left:5px;
+font-family: 'Times New Roman', Times, serif;
+}
+.but{
+    width:90%;
+    height:35px;
+    border: hidden;
+    border-radius:5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: aliceblue;
+    background: #000000;
+}
+.checkk-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    width: 450px;
+    justify-content: flex-start;
+}
+/* Style the modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Modal content */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.popup-button{
+    background-color: black;
+    height: 50px;
+    width: 200px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    border: hidden;
+    color: white;
+}
+.modal-2 {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content-2{
+  background-color: #fefefe;
+  padding: 20px;
+  height: 100vh;
+  width: 300px; 
+}
+
+.close-2 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-2:hover,
+.close-2:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.popup{
+    background-color:white;
+    width: 45%;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    height: auto;
+    top: 50%;
+    left:50%;
+    padding:3%;
+    z-index: 100;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+}
+.popup-close-button{
+    display: block;
+    position:absolute;
+    top:0;
+    right:0;
+    background-color: transparent;
+    font-size: 40px;
+    color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+    color: white;
+}
+.popup a{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #0f72e5;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 0;
+}
+.popup-content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.mobile-register{
+    display:none;
+}
+.contact-form-popup{
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.popup-input{
+    height: 55px;
+    width: 400px;
+    border:hidden;
+    border: 1px solid rgb(179, 178, 178);
+    color: rgb(179, 178, 178);
+    background: none;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+.popup-input::placeholder{
+    color: rgb(179, 178, 178);
+    font-family: 'Times New Roman', Times, serif;
+}
+.popup-submit-button{
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    width: 400px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top:15px;
+    border: hidden;
+    font-weight: 700;
+}
+.form-image{
+    width: 100%;
+    height: 300px;
+}
+.checkbox-popup{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+}
+.checkbox-popup p{
+    color: black;
+    font-size: 15px;
+}
+.checkbox-popup p span{
+    color: orange;
+}
+@media(min-width:320px) and (max-width:480px){
+.bg-image{
+height: 100vh;
+}
+.textt{
+    padding: 0;
+    margin: 0;
+}
+.text{
+text-align: center;
+margin: 0;
+padding: 20px;
+font-size:30px;
+}
+.ppp{
+font-size: 14px;
+padding: 20px;
+margin: 0;
+text-align: center;
+}
+    .photo-1{
+        height: 50vh;
+    }
+    .photo-2{
+        height: 25vh;
+    }
+    .photo-3{
+        height: 50vh;
+    }
+    .section-three-image{
+        height: 50vh;
+    }
+    .form{
+    margin: 0;
+}
+.section-two-card{
+    border-right: 0;
+}
+.base-form{
+    width: 80%;
+}
+.form-inputs{
+    width: 300px;
+}
+.discover-btn{
+    width: 300px;
+}
+.checkk-bottom{
+    width: 300px;
+}
+.popup{
+        width:90%;
+        height:60vh;
+    }
+    .popup-input{
+        height:45px;
+        width:280px;
+    }
+    .popup-submit-button{
+        height:45px;
+        margin-top:15px;
+        width:280px;
+    }
+    .checkbox-popup{
+        width: 280px;
+    }
+}
+</style>
+<body>
+ 
+    <nav class="nav">
+        <img class="img" src="emarimg/361-2.png">
+        </nav>
+    <div class="container-fluid bg-image">
+        <div class="row">
+          <div class="col-12">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <h1 class="text">New Launch
+                        At <br>The Valley</h1>
+                    <p class="ppp">Launching Soon 3-5 Bedroom most in demand Townhouses with flexible payment plan by Emaar.</p>
+                </div> 
+                <div class="col-md-6 col-12">
+
+                   <form class="form" id="contact-form-mobile" action="https://api.web3forms.com/submit" method="POST" onsubmit="return submitFormheader(event)">
+                    <input type="hidden" name="access_key" value="9af8ceef-0cda-45f9-914a-676528f3b8e4">
+                    <input type="hidden" name="subject" id="" value="Form Submission From Landing Page">
+                    <h1>Register Your Interest</h1>
+                    <p class="pp">Get all project information</p>
+                    <input type="text" placeholder="Name" name="Name" required>
+                    <input type="email" placeholder="Email" class="mb-2" name="Email" required>
+                    <input type="hidden" class="text-dark" name="Country Code" id="countrycode">
+                    <input type="tel" id="phonenumber" name="Phone Number" required>
+                    <div class="checkk">
+                    <input class="check" type="checkbox" id="subscribe" name="" required>
+                     <p class="textt">I agree with terms and policies</p>
+                    </div>
+                   <button type="submit" class="but">Submit</button>
+                   </form>
+                </div> 
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container text-center px-4 mt-5">
+        <div class="row gx-5 gy-4">
+          <div class="col-md-4">
+           <div class="section-two-card">
+            <?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill-rule="evenodd"> <rect x="0" y="0" width="100" height="100" fill="#f2f2f2" rx="50" ry="50"></rect> <g fill="#000000" style="transform-origin: center center; transform: scale(0.75);"> <path d="M41.779 73.231c7.675 0 13.92-6.245 13.92-13.92s-6.245-13.92-13.92-13.92-13.92 6.245-13.92 13.92 6.245 13.92 13.92 13.92zm0-24.84c6.021 0 10.92 4.898 10.92 10.92s-4.898 10.92-10.92 10.92-10.92-4.898-10.92-10.92 4.898-10.92 10.92-10.92zm-30.794-1.5h3v24.84h-3zm58.117 0h3v24.84h-3z"></path> <path d="M96.683 19.21H20.434v8.898h-8.201v9.726H3.318v42.954h76.249v-9.726h8.915v-8.898h8.2V19.21h.001zM76.567 77.788H6.318V40.834h70.249v36.954zm8.915-9.725h-5.915V37.834H15.233v-6.726h70.25l-.001 36.955zm8.201-8.899h-5.2V28.108H23.434V22.21h70.249v36.954z"></path> </g> </svg> 
+            <h3>Starting From <br>
+            <span>AED 2.1 Million</span></h3>
+           </div>
+          </div>
+          <div class="col-md-4">
+            <div class="section-two-card">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill-rule="evenodd"> <rect x="0" y="0" width="100" height="100" fill="#f2f2f2" rx="50" ry="50"></rect> <g fill="#000000" style="transform-origin: center center; transform: scale(0.75);"> <path d="M96.364 39.436a4.399 4.399 0 0 0-3.574-3.013l-26.672-3.876L54.19 8.378a4.4 4.4 0 0 0-3.97-2.468 4.403 4.403 0 0 0-3.971 2.468L34.321 32.547 7.649 36.423c-1.681.244-3.05 1.398-3.575 3.013s-.095 3.354 1.121 4.54l19.3 18.813-4.575 26.677a4.405 4.405 0 0 0 1.734 4.311c.78.576 1.7.87 2.626.87.682 0 1.367-.159 2.003-.481l24.49-12.395 23.302 12.25a4.396 4.396 0 0 0 4.663-.337 4.4 4.4 0 0 0 1.762-4.331l-4.557-26.564 19.3-18.812a4.403 4.403 0 0 0 1.121-4.541zm-3.214 2.392L72.72 61.742l4.823 28.118a1.403 1.403 0 0 1-.568 1.397 1.394 1.394 0 0 1-1.503.109L50.8 78.395 24.929 91.489a1.404 1.404 0 0 1-1.493-.125 1.403 1.403 0 0 1-.559-1.39l4.842-28.231-20.43-19.914a1.4 1.4 0 0 1-.361-1.464 1.403 1.403 0 0 1 1.153-.972l28.233-4.103L48.94 9.707a1.4 1.4 0 0 1 1.28-.796 1.4 1.4 0 0 1 1.28.796L64.126 35.29l28.233 4.103c.55.08.98.443 1.152.972s.037 1.075-.361 1.463z"></path> </g> </svg> 
+                <h3>Payment Plan <br>
+                <span>90/10</span></h3>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="section-two-card-3">
+                <?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill-rule="evenodd"> <rect x="0" y="0" width="100" height="100" fill="#f2f2f2" rx="50" ry="50"></rect> <g fill="#000000" style="transform-origin: center center; transform: scale(0.75);"> <path d="M85.59 69.15 56.5 39.53a24.55 24.55 0 0 0-5.89-23.15 23.81 23.81 0 0 0-33.77-.52 24.5 24.5 0 0 0-.24 34.52 23.67 23.67 0 0 0 24.12 6l3.15 3.21a1.5 1.5 0 0 0 1.08.45L56 60v11.5a1.5 1.5 0 0 0 1.5 1.5H69v11.5a1.5 1.5 0 0 0 1.5 1.5h14a1.5 1.5 0 0 0 1.5-1.5V70.2a1.5 1.5 0 0 0-.41-1.05ZM83 83H72V71.48A1.5 1.5 0 0 0 70.5 70H59V58.46a1.5 1.5 0 0 0-.44-1.06 1.63 1.63 0 0 0-1.07-.4H45.56l-3.38-3.44a1.49 1.49 0 0 0-1.59-.36 20.66 20.66 0 0 1-21.86-4.93A21.5 21.5 0 0 1 18.94 18a20.81 20.81 0 0 1 29.49.46 21.55 21.55 0 0 1 4.95 21.07 1.5 1.5 0 0 0 .36 1.47L83 70.81Z"></path> <path d="M30.09 20.36a4.51 4.51 0 0 0-6.36 0l-3.54 3.54a4.5 4.5 0 0 0 0 6.36l3.54 3.54a4.5 4.5 0 0 0 6.36 0l3.54-3.54a4.51 4.51 0 0 0 0-6.36Zm1.41 7.78L28 31.68a1.54 1.54 0 0 1-2.12 0l-3.54-3.54a1.5 1.5 0 0 1 0-2.12l3.54-3.54a1.5 1.5 0 0 1 2.12 0L31.5 26a1.5 1.5 0 0 1 0 2.14Z"></path> </g> </svg> 
+                <h3>Handover <br>
+                <span>Q3 2027</span></h3>
+            </div>
+          </div>
+        </div>
+        <button class="popup-button">Yes, I'm Interested</button>
+      </div>
+
+      <div class="container-fluid mt-5">
+        <div class="row gx-3 gy-4">
+            <div class="col-md-6 ">
+                <div class="section-three-text p-4">
+                    <h1>Most Affordable Master Community by Emaar</h1>
+                    <p>Latest launch in The Valley, a master community comprising of 3-5 Bedroom Townhouses located on Dubai Al-Ain road.</p>
+                    <p>This development of over 4,500 residential units spanned over 200 hectares provides a serene and safe sanctuary to families with its lush green parks, shimmering sands and best-in-class family amenities that have never been seen before in the region.</p>
+                    <p>Each Townhouse has its own personality with bold colors, intimate designs and white volumes to suit every residents' individual ne</p>
+                    <p>You and your loved ones will live the lifestyle you have always dreamt of.</p>
+    
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="section-three-image">
+                    <img src="emarimg/most-affordable.jpg" alt="">
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="section-amenities pt-5 pb-5">
+    <h1 class="mb-4 text-center">Exclusive Amenities</h1>
+    <p class="text-center">Residents can enjoy a variety of amenities and services, including:</p>
+    <div class="container px-4 mt-5">
+        <div class="row gx-5 gy-4">
+          <div class="col-md-4">
+           <div class="amenities-card">
+            <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" viewBox="0 0 100 100">
+                <path d="M92.654 42.283a1.5 1.5 0 1 0 0-3H83.47V22.217c0-6.435-5.233-11.67-11.667-11.67-6.437 0-11.674 5.235-11.674 11.67v17.066H46.162V22.216c0-6.435-5.237-11.67-11.674-11.67-6.433 0-11.667 5.235-11.667 11.67v17.067H7.347a1.5 1.5 0 1 0 0 3h35.815v38.385c-1.258-1.534-3.345-2.451-5.629-2.451-2.344 0-4.487.96-5.733 2.567l-3.305 4.265c-.682.879-1.94 1.404-3.366 1.404h-.001c-1.425-.001-2.682-.525-3.363-1.403l-3.306-4.266c-1.246-1.607-3.389-2.567-5.732-2.567-2.344 0-4.487.96-5.733 2.567a1.5 1.5 0 1 0 2.371 1.837c.682-.88 1.938-1.405 3.362-1.405 1.423 0 2.679.525 3.361 1.405l3.307 4.266c1.245 1.605 3.389 2.564 5.733 2.565h.001c2.346 0 4.49-.959 5.737-2.565l3.306-4.266c.682-.88 1.938-1.405 3.362-1.405 1.423 0 2.679.525 3.361 1.405l2.268 2.925v.222c0 .782.601 1.418 1.366 1.487 1.274 1.379 3.249 2.196 5.404 2.197h.001c2.343 0 4.487-.959 5.733-2.565l3.306-4.266c.682-.88 1.939-1.405 3.364-1.405 1.426 0 2.684.525 3.365 1.405l3.307 4.266c1.246 1.606 3.389 2.565 5.732 2.565s4.486-.959 5.732-2.565l2.351-3.034c.248-.172.439-.419.547-.706l.408-.526c.682-.88 1.938-1.405 3.361-1.405 1.424 0 2.681.525 3.362 1.405a1.5 1.5 0 0 0 2.371-1.837c-1.246-1.607-3.389-2.567-5.733-2.567a7.92 7.92 0 0 0-3.669.883V42.283h9.183zM63.13 22.217c0-4.781 3.891-8.67 8.674-8.67 4.779 0 8.667 3.889 8.667 8.67v17.066H63.13V22.217zM25.821 39.283V22.216c0-4.781 3.888-8.67 8.667-8.67 4.783 0 8.674 3.889 8.674 8.67v17.067H25.821zm54.65 28.872H46.162V55.613h34.309v12.542zM78.102 85.05c-.682.879-1.938 1.403-3.361 1.403s-2.68-.524-3.361-1.403l-3.307-4.266c-1.245-1.607-3.39-2.567-5.736-2.567-2.346 0-4.49.96-5.735 2.567l-3.306 4.265c-.682.879-1.938 1.404-3.362 1.404h-.001c-1.423 0-2.679-.525-3.36-1.403l-.41-.529V71.155h34.309v10.838l-2.37 3.057zm2.369-32.437H46.162v-10.33h34.309v10.33z"/>
+            </svg>
+            <h3>Pools with Sandy Beach</h3>
+           </div>
+          </div>
+          <div class="col-md-4">
+            <div class="amenities-card">
+                <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" viewBox="0 0 100 100">
+                    <path d="M72.078 27.588C53.761 9.272 30.319 12.88 21.092 15.282a8.47 8.47 0 0 0-6.052 6.039c-2.432 9.257-6.109 32.768 12.214 51.092C38.636 83.795 51.997 86.711 62.698 86.71a62.73 62.73 0 0 0 15.542-1.99 8.471 8.471 0 0 0 6.052-6.039c2.432-9.259 6.109-32.77-12.214-51.093zm-54.137-5.506a5.467 5.467 0 0 1 3.905-3.897 59.541 59.541 0 0 1 14.762-1.893l.109.002-20.709 20.709a59.936 59.936 0 0 1 1.933-14.921zm11.434 48.209c-9.244-9.244-12.517-19.927-13.215-29.197l24.637-24.637c9.25.718 19.916 4.008 29.16 13.251 9.244 9.244 12.517 19.927 13.215 29.198L58.536 83.542c-9.251-.717-19.917-4.007-29.161-13.251zm52.016 7.627a5.465 5.465 0 0 1-3.906 3.896 59.6 59.6 0 0 1-14.868 1.889l20.706-20.706a59.89 59.89 0 0 1-1.932 14.921z"/>
+                    <path d="M65.746 54.033a1.5 1.5 0 0 0-2.121 0l-3.904 3.904-4.534-4.534 3.97-3.97a1.5 1.5 0 1 0-2.121-2.121l-3.97 3.97-4.534-4.534 3.969-3.97a1.5 1.5 0 1 0-2.121-2.121l-3.969 3.97-4.534-4.534 3.97-3.969a1.5 1.5 0 1 0-2.121-2.121l-3.97 3.969-3.522-3.522a1.5 1.5 0 1 0-2.121 2.121l3.522 3.522-3.837 3.837a1.5 1.5 0 1 0 2.122 2.121l3.837-3.837 4.534 4.534-3.837 3.837a1.5 1.5 0 1 0 2.122 2.121l3.837-3.837 4.534 4.534-3.837 3.837a1.5 1.5 0 1 0 2.122 2.121l3.837-3.837 4.534 4.534-3.904 3.904a1.5 1.5 0 1 0 2.122 2.121l3.904-3.904 3.849 3.849c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 0 0 0-2.121l-3.849-3.849 3.904-3.904a1.504 1.504 0 0 0-.005-2.121z"/>
+                </svg>
+                <h3>Kid's Play Area</h3>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="amenities-card">
+                <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" viewBox="0 0 100 100">
+                    <path d="M87.682 20.058 72.771 7.595a1.503 1.503 0 0 0-2.114.189l-6.465 7.739-4.882-4.078a1.5 1.5 0 0 0-2.113.19l-9.565 11.45a1.502 1.502 0 0 0 .19 2.113L60.16 35.504 37.117 63.083l-12.34-10.311a1.503 1.503 0 0 0-2.113.189L13.098 64.41a1.5 1.5 0 0 0 .189 2.113l4.882 4.079-6.039 7.228a1.503 1.503 0 0 0 .189 2.114l14.915 12.463a1.503 1.503 0 0 0 2.113-.189l6.039-7.227 4.927 4.117a1.503 1.503 0 0 0 2.113-.189l9.567-11.449a1.5 1.5 0 0 0-.189-2.113l-12.385-10.35 23.043-27.579 12.389 10.349a1.501 1.501 0 0 0 2.114-.19l9.564-11.451a1.5 1.5 0 0 0-.189-2.113l-4.929-4.117 6.461-7.736a1.5 1.5 0 0 0-.19-2.112zM28.006 89.141 15.394 78.602l5.077-6.075 12.612 10.538-5.077 6.076zm13.079-3.3-4.855-4.057c-.023-.022-.041-.047-.066-.067-.024-.02-.052-.034-.077-.052l-14.78-12.35c-.02-.019-.036-.041-.057-.059-.021-.018-.046-.029-.068-.046l-4.82-4.027 7.643-9.146 24.724 20.658-7.644 9.146zm34.539-41.328L50.896 23.857l7.642-9.148 24.728 20.655-7.642 9.149zm3.484-16.53L66.495 17.447l5.503-6.588 12.609 10.54-5.499 6.584z"/>
+                </svg>
+                <h3>Fitness Center</h3>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="amenities-card">
+                <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" viewBox="0 0 100 100">
+                    <path d="M69 36.5a19.4 19.4 0 0 0-13.75 5.71c-.38-.56-.79-1.08-1.21-1.62a5.5 5.5 0 0 1-.58-5.93 20.33 20.33 0 0 0 1.6-15.13A18.69 18.69 0 0 0 38.06 6a18.35 18.35 0 0 0-13.68 5.11 19.35 19.35 0 0 0-5.95 14 20.16 20.16 0 0 0 2.35 9.44 5.5 5.5 0 0 1-.6 5.95 22 22 0 0 0-4.68 13.65c0 11.24 8 20.79 18.22 21.75.37 0 .81.06 1.28.07V93.5a1.5 1.5 0 0 0 3 0V76c1 0 1.89-.06 2.56-.11a18.92 18.92 0 0 0 13.17-7.41A17.64 17.64 0 0 0 66 75.41c.54 0 1.25.08 2 .09v18a1.5 1.5 0 0 0 3 0v-18l1.14-.07c9.17-.79 16.36-9.27 16.36-19.32A19.56 19.56 0 0 0 69 36.5ZM40.3 72.88c-.59 0-1.42.08-2.3.1V25.5a1.5 1.5 0 0 0-3 0v33.38l-7.94-7.94a1.5 1.5 0 0 0-2.12 2.12l10 10H35V73l-1-.06c-8.69-.82-15.5-9.06-15.5-18.76a19 19 0 0 1 4-11.82 8.5 8.5 0 0 0 .88-9.2 17.16 17.16 0 0 1-2-8 16.34 16.34 0 0 1 5-11.79A15.37 15.37 0 0 1 37.91 9a15.69 15.69 0 0 1 14.28 11.36 17.31 17.31 0 0 1-1.37 12.88 8.51 8.51 0 0 0 .86 9.19 23 23 0 0 1 1.55 2.18 19.49 19.49 0 0 0-3.73 11.46A20.32 20.32 0 0 0 52 65.8a16.13 16.13 0 0 1-11.7 7.08Zm31.58-.49-.89.05v-5.83l.12-.11 8-9a1.5 1.5 0 1 0-2.24-2L71 62.12V49.5a1.5 1.5 0 0 0-3 0v23c-.67 0-1.3 0-1.75-.07-7.71-.71-13.75-7.89-13.75-16.35a16.5 16.5 0 1 1 33 0c0 8.49-5.98 15.66-13.61 16.32Z"/>
+                </svg>
+                <h3>Green Park</h3>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="amenities-card">
+                <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" viewBox="0 0 100 100">
+                    <path d="M88.8 32.914 80.494 7.996a1.5 1.5 0 0 0-1.423-1.026H20.93a1.5 1.5 0 0 0-1.423 1.026l-8.306 24.918a1.499 1.499 0 0 0-.077.474v58.141a1.5 1.5 0 0 0 1.5 1.5h74.753a1.5 1.5 0 0 0 1.5-1.5V33.388c0-.161-.026-.321-.077-.474zm-3.302-.421c-3.075 2.249-6.513 3.316-10.757 3.316-3.841 0-7.548-1.195-10.781-3.439V9.97h14.03l7.508 22.523zM39.042 9.97h21.917v22.403c-3.23 2.242-6.937 3.437-10.779 3.437-3.99 0-7.822-1.291-11.138-3.712V9.97zm-17.031 0h14.031v22.128c-3.316 2.421-7.147 3.712-11.138 3.712a18.91 18.91 0 0 1-10.461-3.135L22.011 9.97zm-7.887 80.059V35.987a21.9 21.9 0 0 0 10.78 2.823c4.523 0 8.869-1.405 12.638-4.076 3.769 2.671 8.115 4.076 12.638 4.076 4.373 0 8.596-1.314 12.28-3.811 3.687 2.497 7.909 3.811 12.28 3.811 4.232 0 7.894-.986 11.137-2.967v54.186H14.124z"/>
+                    <path d="M64.807 45.888H35.194a1.5 1.5 0 0 0-1.5 1.5v27.529a1.5 1.5 0 0 0 1.5 1.5h29.613a1.5 1.5 0 0 0 1.5-1.5V47.388a1.5 1.5 0 0 0-1.5-1.5zm-28.113 3h11.959v24.529H36.694V48.888zm26.613 24.529H51.652V48.888h11.654v24.529z"/>
+                </svg>
+                <h3>Community Retail</h3>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="amenities-card">
+                <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" viewBox="0 0 100 100">
+                    <path d="M69.073 81.749 58.471 57.644c13.453-3.835 23.335-16.227 23.335-30.891a1.5 1.5 0 0 0-1.5-1.5H19.051a1.5 1.5 0 0 0-1.5 1.5c0 14.228 9.301 26.319 22.14 30.528L24.625 91.553a1.5 1.5 0 0 0 2.747 1.208l2.185-4.971H62.72l-.001.012c0 3.345 2.724 6.066 6.071 6.066s6.071-2.722 6.071-6.066c.001-3.25-2.571-5.904-5.788-6.053zM20.589 28.252h58.18c-.783 15.366-13.533 27.625-29.093 27.625-15.557 0-28.304-12.259-29.087-27.625zm10.286 56.537 11.739-26.704c2.274.512 4.635.792 7.062.792 1.989 0 3.934-.191 5.824-.539l10.575 24.045a6.1 6.1 0 0 0-2.547 2.406H30.875zm37.916 6.078c-1.693 0-3.071-1.376-3.071-3.066s1.378-3.066 3.071-3.066 3.071 1.376 3.071 3.066-1.378 3.066-3.071 3.066zM40.572 21.493a1.5 1.5 0 0 0 1.5-1.5V6.742a1.5 1.5 0 1 0-3 0v13.251a1.5 1.5 0 0 0 1.5 1.5zm9.104 0a1.5 1.5 0 0 0 1.5-1.5V6.742a1.5 1.5 0 1 0-3 0v13.251a1.5 1.5 0 0 0 1.5 1.5zm9.11 0a1.5 1.5 0 0 0 1.5-1.5V6.742a1.5 1.5 0 1 0-3 0v13.251a1.5 1.5 0 0 0 1.5 1.5z"/>
+                </svg>                
+                <h3>BBQ Area</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+ 
+
+<div class="section-gallery mb-5 pt-5">
+    <h1 class="text-center mb-5">Photo Gallery</h1>
+    <div class="gallery-wrapper">
+        <div class="gallery-inner">
+            <div class="gallery-img">
+                <img src="emarimg/photo1.jpg" alt="">
+            </div>
+            <div class="gallery-img">
+                <img src="emarimg/photo2.jpg" alt="">
+            </div>
+            <div class="gallery-img">
+                <img src="emarimg/photo3.jpg" alt="">
+            </div>
+            <div class="gallery-img">
+                <img src="emarimg/photo4.jpg" alt="">
+            </div>
+            <div class="gallery-img">
+                <img src="emarimg/photo5.jpg" alt="">
+            </div>
+            <div class="gallery-img">
+                <img src="emarimg/photo6.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section-location pt-5 pb-5">
+    <h1 class="text-center mb-3">Project Location</h1>
+    <p class="text-center w-50 mx-auto mb-4">With easy access to all major areas of Dubai and an array of green open spaces, The Valley is strategically located on the Dubai—Al Ain Road, a major connection point between the emirates of Dubai and Abu Dhabi.</p>
+    <div class="container-fluid">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2754.0327313636494!2d55.451919473941004!3d25.01537993904375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f7d5b6e348abf%3A0x200f43e8226e0a1c!2sThe%20Valley%20Emaar%20Properties!5e1!3m2!1sen!2sus!4v1715340554097!5m2!1sen!2sus" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+
+<div class="accordion pt-5 pb-5">
+    <h1>Frequently Asked Questions</h1>
+    <div class="accordion-item">
+        <input type="checkbox" id="accordion1">
+        <label for="accordion1" class="accordion-item-title"><span class="icon"></span>Where is The Valley Located?</label>
+        <div class="accordion-item-desc">The Valley is located on Dubai Al Ain road with an easy access to major highways. Travel time to Downtown Dubai, Business Bay, and Dubai International Airport will take 25 minutes.</div>
+    </div>
+
+    <div class="accordion-item">
+        <input type="checkbox" id="accordion2">
+        <label for="accordion2" class="accordion-item-title"><span class="icon"></span>What are the types of properties available in The Valley?</label>
+        <div class="accordion-item-desc">The Valley offers exquisite collection 3-5 Bedroom of Townhouses & Villas</div>
+    </div>
+
+    <div class="accordion-item">
+        <input type="checkbox" id="accordion3">
+        <label for="accordion3" class="accordion-item-title"><span class="icon"></span>What makes The Valley a good investment?</label>
+        <div class="accordion-item-desc">The Valley is a perfect investment opportunity. You will be able to resell your property at a higher price after the completion of the project and generate a 15–20% profit. Or you can start renting it out after the completion of the project. The average ROI for a 3-bedroom townhouse in the nearby areas is 6.4%.</div>
+    </div>
+
+
+</div>
+
+<div class="section-form">
+    <h1 class="text-center mb-4 text-light">Discover The Valley Today!</h1>
+    <form class="base-form mt-4" id="contact-form-mobile-2"  action="https://api.web3forms.com/submit" method="POST" onsubmit="return submitFormheader2(event)">
+        <input type="hidden" name="access_key" value="9af8ceef-0cda-45f9-914a-676528f3b8e4">
+        <input type="hidden" name="subject" id="" value="Form Submission From Landing page">
+        <input class="form-inputs" type="text" placeholder="Name" id="name" name="Name" required>
+        <input class="form-inputs" type="email" placeholder="Email" id="email" name="Email" required>
+        <input type="hidden" class="text-dark"  name="Country Code" id="countrycode-2">
+        <input class="form-inputs" type="tel" id="phonenumber-2" name="Phone Number" required>
+        <div class="checkk-bottom">
+            <input class="check" type="checkbox" id="subscribe" name="" required>
+             <p class="textt text-light">I agree with terms and policies</p>
+            </div>
+        <button type="submit" class="discover-btn">Discover More</button>
+    </form>
+
+</div>
+
+<div class="popup" id="popup-main">
+    <button class="popup-close-button" id="close">&times;</button>
+    <div class="popup-content" id="popup-content-id">
+        <h1>Download Brochure</h1>
+  <form class="contact-form-popup mt-5" id="contact-form-3" action="https://api.web3forms.com/submit" method="POST" onsubmit="return brochuredownload(event)">
+                  <input type="hidden" name="access_key" value="9af8ceef-0cda-45f9-914a-676528f3b8e4">
+              <input type="hidden" name="subject" id="subject-register-3" value="Brochure Download Request From Landing Page">
+      <div class="d-flex mb-3 flex-column">
+      <input type="text" name="Full name" id="" class="popup-input" placeholder="Full name*" required>
+      </div>
+      <div class="d-flex mb-3 flex-column">
+          <input type="hidden" id="countryCode-popup" name="Country Code">
+      <input type="text" name="Phone number" id="phone-popup" class="popup-input" placeholder="Mobile number*" required>
+      </div>
+      <div class="d-flex flex-column">
+      <input type="text" name="Email" id="email-3" class="popup-input" placeholder="Email*" required>
+      </div>
+      <div class="checkbox-popup">
+        <input class="check" type="checkbox" id="brochure-cehck" name="" required>
+         <p class="">I agree with terms of <span> Privacy Policy</span></p>
+        </div>
+      <button class="popup-submit-button" type="submit" value="">Discover More</button>
+  </form>
+    </div>
+</div>
+
+<script>
+    const galleryStyleSheet = `
+.gallery-wrapper {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+.gallery-wrapper img {
+	max-width: 100%;
+	transition: all 0.2s ease-in-out;
+}
+
+.gallery-wrapper .gallery-img img {
+	cursor: pointer;
+}
+
+.gallery-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	z-index: 2;
+	position: relative;
+}
+
+.gallery-popup.active + .gallery-overlay {
+	content: "";
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	inset: 0;
+	background-color: rgb(0 0 0 / 75%);
+	z-index: 5;
+	overflow: hidden;
+}
+
+.gallery-popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: calc(100% - 48px);
+	height: calc(100% - 80px);
+	padding: 0px;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 6;
+	animation: showPopUp 0.45s linear;
+}
+
+.gallery-popup .close,
+.gallery-popup .next,
+.gallery-popup .prev {
+	position: absolute;
+	top: 0;
+	right: 2rem;
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.gallery-popup img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.gallery-popup .close {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	top: -40px;
+	right: 0;
+    background:transparent;
+    border:hidden;
+}
+
+.gallery-popup .next {
+	right: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 30px;
+	height: 20px;
+	font-size: 20px;
+	cursor: pointer;
+	padding: 10px;
+	background-color: rgb(255 255 255 / 75%);
+}
+
+.gallery-popup .prev {
+	left: 0px;
+	right: auto;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 30px;
+	height: 20px;
+	font-size: 20px;
+	cursor: pointer;
+	padding: 10px;
+	background-color: rgb(255 255 255 / 75%);
+}
+
+.gallery-wrapper .gallery-inner {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(4, 1fr);
+	position: relative;
+	z-index: 4;
+}
+
+@keyframes showPopUp {
+	0% {
+		opacity: 0;
+		visibility: hidden;
+	}
+	50% {
+		opacity: 0.5;
+		visibility: visible;
+	}
+	100% {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+@keyframes imgTransitionNext {
+	0% {
+		transform: translateX(100vw);
+		opacity: 0;
+	}
+	
+	5% {
+		transform: translateX(95vw);
+		opacity: 0.15
+	}
+	
+	10% {
+		transform: translateX(90vw);
+		opacity: 0.1;
+	}
+	
+	15% {
+		transform: translateX(85vw)
+		opacity: 0.20
+	}
+	
+	20% {
+		transform: translateX(80vw);
+		opacity: 0.2;
+	}
+	
+	25% {
+		transform: translateX(75vw)
+		opacity: 0.20
+	}
+	
+	30% {
+		transform: translateX(70vw);
+		opacity: 0.3;
+	}
+	
+	35%{
+		transform: translateX(75vw)
+		opacity: 0.35;
+	}
+	
+	40% {
+		transform: translateX(60vw);
+		opacity: 0.4;
+	}
+	
+	45%{
+		transform: translateX(55vw)
+		opacity: 0.45;
+	}
+	
+	50% {
+		transform: translateX(50vw);
+		opacity: 0.5;
+	}
+	
+	55%{
+		transform: translateX(45vw)
+		opacity: 0.55;
+	}
+	
+	60% {
+		transform: translateX(40vw);
+		opacity: 0.6;
+	}
+	
+	65%{
+		transform: translateX(65vw)
+		opacity: 0.65;
+	}
+	
+	70% {
+		transform: translateX(30vw);
+		opacity: 0.7;
+	}
+	
+75%{
+		transform: translateX(25vw)
+		opacity: 0.75;
+	}
+	
+	80% {
+		transform: translateX(20vw);
+		opacity: 0.8;
+	}
+	
+	85%{
+		transform: translateX(15vw)
+		opacity: 0.85;
+	}
+	
+	90% {
+		transform: translateX(10vw);
+		opacity: 0.9;
+	}
+	
+	95%{
+		transform: translateX(5vw)
+		opacity: 0.95;
+	}
+	
+	100%{
+		transform: translateX(0vw);
+		opacity: 1;
+	}
+}
+
+
+@keyframes imgTransitionPrev {
+	0% {
+		transform: translateX(-100vw);
+		opacity: 0;
+	}
+	
+	5% {
+		transform: translateX(-95vw);
+		opacity: 0.15
+	}
+	
+	10% {
+		transform: translateX(-90vw);
+		opacity: 0.1;
+	}
+	
+	15% {
+		transform: translateX(-85vw)
+		opacity: 0.20
+	}
+	
+	20% {
+		transform: translateX(-80vw);
+		opacity: 0.2;
+	}
+	
+	25% {
+		transform: translateX(-75vw)
+		opacity: 0.20
+	}
+	
+	30% {
+		transform: translateX(-70vw);
+		opacity: 0.3;
+	}
+	
+	35%{
+		transform: translateX(-75vw)
+		opacity: 0.35;
+	}
+	
+	40% {
+		transform: translateX(-60vw);
+		opacity: 0.4;
+	}
+	
+	45%{
+		transform: translateX(-55vw)
+		opacity: 0.45;
+	}
+	
+	50% {
+		transform: translateX(-50vw);
+		opacity: 0.5;
+	}
+	
+	55%{
+		transform: translateX(-45vw)
+		opacity: 0.55;
+	}
+	
+	60% {
+		transform: translateX(-40vw);
+		opacity: 0.6;
+	}
+	
+	65%{
+		transform: translateX(-65vw)
+		opacity: 0.65;
+	}
+	
+	70% {
+		transform: translateX(-30vw);
+		opacity: 0.7;
+	}
+	
+75%{
+		transform: translateX(-25vw)
+		opacity: 0.75;
+	}
+	
+	80% {
+		transform: translateX(-20vw);
+		opacity: 0.8;
+	}
+	
+	85%{
+		transform: translateX(-15vw)
+		opacity: 0.85;
+	}
+	
+	90% {
+		transform: translateX(-10vw);
+		opacity: 0.9;
+	}
+	
+	95%{
+		transform: translateX(-5vw)
+		opacity: 0.95;
+	}
+	
+	100%{
+		transform: translateX(0vw);
+		opacity: 1;
+	}
+}
+
+@media only screen and (max-width: 1280px) {
+	.gallery-wrapper .gallery-inner {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.gallery-wrapper .gallery-inner {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.gallery-popup .next {
+		right: 0px;
+	}
+	.gallery-popup .prev {
+		left: 0px;
+	}
+	
+	.gallery-popup {
+		top: 60px !important;
+		left: 50% !important;
+		transform: translate(-50%, 0%);
+		height: calc(350px - 60px)
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.gallery-wrapper .gallery-inner {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+`;
+
+const body = document.querySelector("body");
+const galleryWrapper = document.querySelector(".gallery-wrapper");
+
+const styeElement = document.createElement("style");
+styeElement.innerHTML = galleryStyleSheet;
+styeElement.style.display = "none";
+body.append(styeElement);
+
+const galleryPopup = document.createElement("div");
+galleryPopup.className = "gallery-popup";
+
+galleryPopup.innerHTML = `
+    <button class="close">&times;</button>
+		<span class="next">&#187;</span>
+		<span class="prev">&#171;</span>
+		<img src="" alt="">
+`;
+
+const galleryOverlay = document.createElement("div");
+galleryOverlay.className = "gallery-overlay";
+body.prepend(galleryOverlay);
+body.prepend(galleryPopup);
+
+const images = [...galleryWrapper.querySelectorAll(".gallery-img img")];
+const closeBtn = galleryPopup.querySelector(".close");
+const nextBtn = galleryPopup.querySelector(".next");
+const prevBtn = galleryPopup.querySelector(".prev");
+
+nextBtn.addEventListener("click", nextImg);
+prevBtn.addEventListener("click", prevImg);
+
+// Creating Animation For Image Transition
+const imgTransitionNext = `animation: imgTransitionNext 0.45s linear`;
+const imgTransitionPrev = `animation: imgTransitionPrev 0.45s linear`;
+let showImg = galleryPopup.querySelector(".gallery-popup img");
+
+let selectedImg = null;
+let startCount = 0;
+let endCount = images.length - 1;
+
+closeBtn.addEventListener("click", (e) => {
+	galleryPopup.style.display = "none";
+	galleryPopup.classList.remove("active");
+	selectedImg === null;
+	startCount = 0;
+	endCount = images.length - 1;
+	body.style.overflow = "auto";
+});
+
+// Click Next Button Function
+function nextImg() {
+	if (selectedImg < 0) return;
+	if (selectedImg === endCount) {
+		selectedImg = startCount;
+	} else {
+		selectedImg++;
+	}
+	showImg.src = images[selectedImg].src;
+	addRemoveAnimationNext();
+}
+
+// Click Prev Button Function
+function prevImg() {
+	if (selectedImg < 0) return;
+	if (selectedImg === startCount) {
+		selectedImg = endCount;
+	} else {
+		selectedImg--;
+	}
+	showImg.src = images[selectedImg].src;
+	addRemoveAnimationPrev();
+}
+
+// Initial Click Handler
+images.forEach((img, index) => {
+	img.addEventListener("click", (e) => {
+		galleryPopup.style.display = "block";
+		galleryPopup.classList.add("active");
+		showImg.src = e.currentTarget.src;
+		selectedImg = index;
+		body.style.overflow = "hidden";
+	});
+});
+
+// Function for add and Remove Style Attribute
+function addRemoveAnimationNext() {
+	showImg.setAttribute("style", imgTransitionNext);
+	setTimeout(() => {
+		showImg.setAttribute("style", "");
+	}, 500);
+}
+
+function addRemoveAnimationPrev() {
+	showImg.setAttribute("style", imgTransitionPrev);
+	setTimeout(() => {
+		showImg.setAttribute("style", "");
+	}, 500);
+}
+
+</script>
+
+
+<script>
+                            const input3 = document.querySelector("#phonenumber");
+const iti3 = window.intlTelInput(input3, {
+  separateDialCode: true,
+  utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.3.5/js/utils.js",
+  initialCountry: "ae"
+});
+input3.addEventListener('input', function () {
+  const countryCodeInput = document.getElementById('countrycode');
+  const selectedCountryData = iti3.getSelectedCountryData();
+  countryCodeInput.value = '+' + selectedCountryData.dialCode;
+});
+    function submitFormheader(event) {
+        event.preventDefault();
+        const form = document.getElementById('contact-form-mobile');
+        const formData = new FormData(form);
+
+        fetch(form.action, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (response.ok) {
+                alert('Thank You for Contacting Us');
+                document.getElementById('contact-form-mobile').reset();
+            } else {
+                console.error('Form submission failed:', response.statusText);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    }
+</script>
+
+<script>
+ const input = document.querySelector("#phonenumber-2");
+const iti = window.intlTelInput(input, {
+  separateDialCode: true,
+  utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.3.5/js/utils.js",
+  initialCountry: "ae"
+});
+input.addEventListener('input', function () {
+  const countryCodeInput = document.getElementById('countrycode-2');
+  const selectedCountryData = iti.getSelectedCountryData();
+  countryCodeInput.value = '+' + selectedCountryData.dialCode;
+});
+    function submitFormheader2(event) {
+        event.preventDefault();
+        // Get form data
+        const form = document.getElementById('contact-form-mobile-2');
+        const formData = new FormData(form);
+
+        // Send form data asynchronously
+        fetch(form.action, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (response.ok) {
+                alert('Thank You for Contacting Us');
+                document.getElementById('contact-form-mobile-2').reset();
+                // Reset form fields
+            } else {
+                // Handle error
+                console.error('Form submission failed:', response.statusText);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    }
+</script>
+<script>
+
+var popupClosed = false; 
+var formSubmitted = false; 
+
+window.addEventListener("load", function(){
+    window.addEventListener("scroll", function(){
+        if (!popupClosed && !formSubmitted && window.scrollY > 500) { 
+            document.querySelector(".popup").style.display = "block";
+        }
+    });
+    document.querySelector(".popup-button").addEventListener("click", function() {
+            document.querySelector(".popup").style.display = "block";
+        });
+});
+
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+    popupClosed = true; 
+});
+
+                            const input4 = document.querySelector("#phone-popup");
+const iti4 = window.intlTelInput(input4, {
+  separateDialCode: true,
+  utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.3.5/js/utils.js",
+  initialCountry: "ae"
+});
+input4.addEventListener('input', function () {
+  const countryCodeInput = document.getElementById('countryCode-popup');
+  const selectedCountryData = iti4.getSelectedCountryData();
+  countryCodeInput.value = '+' + selectedCountryData.dialCode;
+});
+    function brochuredownload(event) {
+        event.preventDefault();
+        const form = document.getElementById('contact-form-3');
+        const formData = new FormData(form);
+
+        fetch(form.action, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (response.ok) {
+                alert('Thank You for Contacting Us');
+                document.getElementById('popup-main').style.display = "none";
+                formSubmitted = true;
+            } else {
+                console.error('Form submission failed:', response.statusText);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    }
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

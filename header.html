@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+.navbar-section-main{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+}
+.navbar-section-one{
+    height: 100px;
+    width: 100%;
+    background-color: #06112A;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navbar-one-sub i{
+    height: 40px;
+    width:40px;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(81, 81, 81);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.navbar-one-sub{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-sub-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.navbar-sub-details h5{
+    font-size: 14px;
+    line-height: 0.5;
+    color: white;
+}
+.navbar-sub-details span{
+    color: gray;
+    font-size: 12px;
+}
+.navbar-section-two{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-two-sub1{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-two-sub1 img{
+    width: 70px;
+    height: 70px;
+}
+.navbar-two-sub2{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.navbar-two-sub3{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-search-button{
+    background-color: white;
+    border-radius: 20px;
+    height: 35px;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.nav-search-button i{
+font-size: 13px;
+margin-right: 8px;
+color: #646464;
+}
+.nav-search-button input{
+    border: hidden;
+    outline: none;
+    background-color: white;
+    width: 100px;
+    border-radius: 20px;
+    height: 100%;
+    font-size: 12px;
+}
+.navbar-two-sub2 a{
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: white;
+}
+.navbar-mobile-menu{
+    display: none;
+}
+.agents-profile-card{
+    width: 80%;
+    height: 300px;
+    transition: all 0.4s ease;
+    margin: auto;
+    background-image: linear-gradient(180deg, #000000 30%, rgb(255, 255, 255) 30%, rgb(255, 255, 255) 70%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.agents-profile-card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+}
+.agents-profile-card h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+.agents-profile-card span{
+    font-size: 14px;
+}
+.agent-social-medias{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 150px;
+}
+.agent-social-medias i{
+    height: 30px;
+    width: 30px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(193, 193, 193);
+    font-size: 12px;
+    border-radius: 50%;
+}
+.agent-social-medias a{
+    text-decoration: none;
+}
+.agents-profile-card button{
+    height: 35px;
+    border: hidden;
+    outline: none;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    width: 120px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.agents-profile-card:hover{
+    background-image: linear-gradient(180deg, #ffffff 30%, rgb(0, 0, 0) 30%, rgb(1, 1, 1) 70%);
+    cursor: pointer;
+}
+.agents-profile-card:hover button{
+    background-color: white;
+    color: black;
+}
+.agents-profile-card:hover i{
+    color: white;
+}
+.agents-profile-card:hover h3{
+    color: white;
+}
+.agents-profile-card:hover span{
+    color: white;
+}
+@media(min-width:320px) and (max-width:480px){
+    .navbar-section-main{
+        height: 400px;
+    }
+ .navbar-section-one{
+    height: 180px;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+ }
+ .navbar-one-sub{
+    width: 100%;
+    align-items:center;
+    justify-content: flex-start;
+ }
+ .navbar-two-sub2{
+    display: none;
+ }
+ .navbar-two-sub3{
+    display: none;
+ }
+ .navbar-mobile-menu{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+ }
+ .navbar-mobile-menu-button{
+border: hidden;
+outline: none;
+color: black;
+background: transparent;
+ }
+ .navbar-mobile-menu button i{
+    color: white;
+    font-size: 20px;
+ }
+ .offcanvas-body a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+ }
+}
+</style>
+<body>
+<nav class="navbar-section-main">
+<div class="navbar-section-one">
+<div class="navbar-one-sub">
+    <i class="fa-solid fa-headset"></i>
+<div class="navbar-sub-details">
+<h5>Call +971 11 222 3333</h5>
+<span>Call Us Now 24/7 Customer Support</span>
+</div>
+</div>
+<div class="navbar-one-sub">
+    <i class="fa-solid fa-paper-plane"></i>
+    <div class="navbar-sub-details">
+    <h5>Our Location</h5>
+    <span>Dubai,United Arab Emirates</span>
+    </div>
+    </div>
+    <div class="navbar-one-sub">
+        <i class="fa-brands fa-connectdevelop"></i>
+        <div class="navbar-sub-details">
+        <h5>Connect With Us</h5>
+        <span>FACEBOOK INSTAGRAM WHATSAPP</span>
+        </div>
+        </div>
+</div>
+<div class="navbar-section-two">
+<div class="navbar-two-sub1">
+<img src="/img/domainlogo.png" alt="">
+</div>
+<div class="navbar-mobile-menu">
+    <button class="navbar-mobile-menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="fa-solid fa-bars"></i></button>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="background-image: linear-gradient(rgba(201, 201, 201, 0.4), rgba(201, 201, 201, 0.4)),url('https://wallpapers.com/images/hd/burj-khalifa-in-dubai-city-47l8d2wn50x8u1v5.jpg');background-size: cover;">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasTopLabel" class="fw-bold text-light">DOMAINE PROPERTIES</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <a href="">HOME</a>
+    <a href="">ABOUT</a>
+    <a href="">PROPERTIES</a>
+    <a href="">BLOG</a>
+    <a href="">CONTACT US</a>
+    <a href="">AGENTS</a>
+        </div>
+      </div>
+</div>
+<div class="navbar-two-sub2">
+    <a href="">HOME</a>
+    <a href="">ABOUT</a>
+    <a href="">PROPERTIES</a>
+    <a href="">BLOG</a>
+    <a href="">CONTACT US</a>
+    <a href="">AGENTS</a>
+</div>
+<div class="navbar-two-sub3">
+    <div class="nav-search-button">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" placeholder="Find a property">
+    </div>
+</div>
+</div>
+</nav>
+
+<div class="container mt-5 mb-5">
+    <div class="row gx-3 gy-3">
+        <div class="col-md-4">
+<div class="agents-profile-card">
+<img src="https://domaine-properties.com/wp-content/uploads/2017/11/Bassam-Aboukurch-525x328.jpeg.webp" alt="">
+<h3>Bassam Abou kurch</h3>
+<span>Property Consultant</span>
+<div class="agent-social-medias">
+    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href=""><i class="fa-brands fa-instagram"></i></a>
+    <a href=""><i class="fa-solid fa-envelope"></i></a>
+    <a href=""><i class="fa-solid fa-phone"></i></a>
+</div>
+<a href=""><button>Message</button></a>
+</div>
+     </div>
+        <div class="col-md-4">
+     <div class="agents-profile-card">
+        <img src="https://st2.depositphotos.com/1006318/5909/v/450/depositphotos_59094701-stock-illustration-businessman-profile-icon.jpg" alt="">
+        <h3>Doniyorbek Istamov</h3>
+        <span>Property Consultant</span>
+        <div class="agent-social-medias">
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+            <a href=""><i class="fa-solid fa-phone"></i></a>
+        </div>
+        <a href=""><button>Message</button></a> 
+     </div>
+        </div>
+        <div class="col-md-4">
+        <div class="agents-profile-card">
+            <img src="https://st2.depositphotos.com/1006318/5909/v/450/depositphotos_59094701-stock-illustration-businessman-profile-icon.jpg" alt="">
+            <h3>Sharonclaire Mangong</h3>
+            <span>Property Consultant</span>
+            <div class="agent-social-medias">
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-solid fa-envelope"></i></a>
+                <a href=""><i class="fa-solid fa-phone"></i></a>
+            </div>
+            <a href=""><button>Message</button></a>         
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
